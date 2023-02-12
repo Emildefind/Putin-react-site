@@ -44,8 +44,7 @@ export class AddPostForm extends Component {
                     placeholder="Заголовок текста"
                     name="email"
                     className="placeholderForm1"
-                     value = {e.target.value}
-                     onChange = {handlePostTitleChange}
+                  
                     required
                     />
                     <input
@@ -53,11 +52,10 @@ export class AddPostForm extends Component {
                     placeholder="текст поста"
                     name="parol"
                     className="placeholderForm2"
-                     value = {e.target.value}
-                     onChange = { handlePostDescriptionChange}
+                    
                     required
                     />
-                    <button className='submit' type='submit' onClick={ createPost}>Добавить</button>
+                    <button className='submit' type='submit'  >Добавить</button>
                 </div>
                 </div>
             </div>

@@ -1,0 +1,45 @@
+[
+    {
+     "category": 1,
+     "name": "Россия",
+     "photos": [
+      "https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/1200px-Flag_of_Russia.svg.png",
+      "https://well.ru/upload/iblock/a90/03.jpeg",
+      "https://oir.mobi/uploads/posts/2021-06/1623252549_21-oir_mobi-p-prirodnie-krasoti-rossii-priroda-krasivo-f-21.jpg",
+      "https://www.russiadiscovery.ru/upload/files/files/%D0%A0%D1%83%D1%81%D0%BA%D0%B5%D0%B0%D0%BB%D0%B0.jpg"
+     ]
+    },
+    
+    {
+     "category": 2,
+     "name": "Россия",
+     "photos": [
+      "https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/1200px-Flag_of_Russia.svg.png",
+      "https://well.ru/upload/iblock/a90/03.jpeg",
+      "https://oir.mobi/uploads/posts/2021-06/1623252549_21-oir_mobi-p-prirodnie-krasoti-rossii-priroda-krasivo-f-21.jpg",
+      "https://www.russiadiscovery.ru/upload/files/files/%D0%A0%D1%83%D1%81%D0%BA%D0%B5%D0%B0%D0%BB%D0%B0.jpg"
+     ]
+    }, 
+    
+    {
+     "category": 3,
+     "name": "Россия",
+     "photos": [
+      "https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/1200px-Flag_of_Russia.svg.png",
+      "https://well.ru/upload/iblock/a90/03.jpeg",
+      "https://oir.mobi/uploads/posts/2021-06/1623252549_21-oir_mobi-p-prirodnie-krasoti-rossii-priroda-krasivo-f-21.jpg",
+      "https://www.russiadiscovery.ru/upload/files/files/%D0%A0%D1%83%D1%81%D0%BA%D0%B5%D0%B0%D0%BB%D0%B0.jpg"
+     ]
+    }, 
+   
+    {
+     "category": 4,
+     "name": "Россия",
+     "photos": [
+      "https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/1200px-Flag_of_Russia.svg.png",
+      "https://well.ru/upload/iblock/a90/03.jpeg",
+      "https://oir.mobi/uploads/posts/2021-06/1623252549_21-oir_mobi-p-prirodnie-krasoti-rossii-priroda-krasivo-f-21.jpg",
+      "https://www.russiadiscovery.ru/upload/files/files/%D0%A0%D1%83%D1%81%D0%BA%D0%B5%D0%B0%D0%BB%D0%B0.jpg"
+     ]
+    }
+   ]

@@ -13,7 +13,7 @@ export const BlogCard = ({
     const heartFill = liked? 'purple' : 'black'
     likePost=(pos) => {
         const temp = [...this.state.blogArr];
-        temp[pos].licked= !temp[pos].licked;
+        temp[pos].liked= !temp[pos].liked;
         this.setState( {
            blogArr:temp
         })

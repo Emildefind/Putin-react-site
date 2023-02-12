@@ -3,7 +3,7 @@ import axios from 'axios';
 import React from 'react';
 //import { useState } from 'react';
 import {Component} from 'react';
-import {BlogCard} from './components/BlogCard';
+
 
 import {AddPostForm} from './components/AddPostForm'
 
@@ -14,7 +14,7 @@ export class Blog extends Component {
         blogArr: []
     }; 
     componentDidMount(){
-        axios.get('https://63708e840399d1995d7f6782.mockapi.io/Arr')
+        axios.get('https://63708eae08218c267e016a33.mockapi.io/Emiltop')
         .then((response) => {
             this.setState({
                 blogArr: response.data
@@ -27,15 +27,8 @@ export class Blog extends Component {
     render() {
     const blogPosts = this.state.blogArr.map((item, pos) => {
         return(
-            <BlogCard
-            description = {item.description}
-            key = {item.id}
-            title = {item.title}
-
-            liked = {item.liked}
-            likePost = {() => this.likePost(pos)}
-            deletePost = {() => this.deletePost(pos)}
-            />
+            <>
+            </>
         )
     });
 

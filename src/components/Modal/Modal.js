@@ -1,28 +1,91 @@
-import './Modal.css'
-import React from 'react';
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./Modal.css";
+ 
+ 
+  
+export const Modal = ({
+  setIsLoggedIn,
+  setUserName,
+  setIsAdmin
+}) => {
 
-export const Modal = () =>{
-    return(
-        <div>
-    <div id="myModal" class="modal_fade" tabindex="-1">
-        <div class="modal-dialog_modal-sm" id="ab">
-            <div class="modal-content">
-                <div class="container">
-                    <div class="row">
-                        <h2 class="modal-header-h2">Введите данные:</h2>
-                    </div>
-                    <div class="row">
-                        <input type="text" placeholder="test@email.com" name="email" class="placeholder"/>
-                        <input type="text" placeholder="ваш пароль" name="password" class="placeholder"/>
-                        <button class="btn_btn-danger" type="submit">Вход/Регистрация</button>
-                    </div>
-                    <div class="row">
-                        <button class="btn_btn-danger" id="clos" data-dismiss="modal">Закрыть</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        </div>
-    )
-}
+  
+  const [login, setLogin] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleLoginChange = (e) => {
+    setLogin(e.target.value)
+  }
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value)
+  }
+
+  const handleLogIn = (e) => {
+    e.preventDefault();
+
+    if (login === 'Putin') {
+      if (password === '147'){  
+        localStorage.setItem('isAdmin', true);
+        setIsAdmin(true);
+      }
+      else {
+        alert('Введите правильный логин или пароль!');
+
+       
+        return false
+      }
+    }
+    localStorage.setItem('isLoggedIn', true);
+    localStorage.setItem('userName', login);
+    setUserName(login);
+    setIsLoggedIn(true);
+   
+  }
+
+  return (
+    <h1> 
+       
+      
+     
+    
+     <form className='regForm' onSubmit = {handleLogIn}>  
+     <div className='probel1'>
+        &nbsp; 
+      </div>
+     <h3 className='regElem1'>Вход/Регистрация</h3>
+      <div className='regElem3' >
+       <input type = "text" 
+      value = {login}
+      onChange={handleLoginChange}
+        placeholder='Логин'
+         name = "login"
+          className='inputReg'
+          required
+          /> 
+      </div>
+       <div className='regElem'>
+       <input type = "text"
+       value = {password}
+       onChange={handlePasswordChange}
+        placeholder='Пароль'
+          name = "parol"
+          className='inputReg' 
+          required/> 
+      </div>
+      <div className='regElem2'>
+      <button className="btn" type="submit">
+            Войти
+          </button>
+       </div>
+       <div className='smallFormText'>  
+       
+       </div>
+       
+   </form> 
+
+
+ 
+    </h1>
+  );
+};
